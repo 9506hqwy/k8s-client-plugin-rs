@@ -1,7 +1,8 @@
-# Template for Rust Crate
+# Kubernetes Client Plugin for Rust
 
-This repository provides a template for Rust crate.
+## Sample kubelet Plugin
 
-## TODO
+This plugin provides `kubectl create sample` command that creates sample custom resources
+that is managed by [sample-custom-controller](https://github.com/9506hqwy/k8s-custom-controller-rs).
 
-* Collect test coverage on vscode test running.
+Copy the binary to `PATH` directory.

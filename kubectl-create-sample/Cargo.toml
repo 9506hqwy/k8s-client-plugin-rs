@@ -1,0 +1,23 @@
+[package]
+name = "kubectl-create-sample"
+keywords = ["kubernetes"]
+# https://crates.io/category_slugs
+categories = ["command-line-interface"]
+
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+
+[dependencies]
+clap = { version = "4.5.20", features = ["derive"] }
+env_logger = "0.11.5"
+k8s-openapi = { version = "0.23.0", features = ["latest"] }
+kube = { version = "0.96.0", features = ["derive"] }
+log = "0.4.22"
+schemars = "0.8.21"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+tokio = { version = "1.40.0", features = ["macros", "rt-multi-thread"] }
