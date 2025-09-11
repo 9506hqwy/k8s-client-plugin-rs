@@ -1,7 +1,7 @@
 use clap::Parser;
+use kube::Resource;
 use kube::api::Api;
 use kube::api::PostParams;
-use kube::Resource;
 use kube::{Client, ResourceExt};
 use kubectl_create_sample::{Sample, SampleSpec};
 use std::error::Error;
